@@ -3,6 +3,7 @@ from rest_framework import generics
 from .serializers import UserSerializer
 from django.contrib.auth.models import User
 
+
 class UserView(mixins.ListModelMixin, mixins.CreateModelMixin, generics.GenericAPIView):
 
     serializer_class = UserSerializer
